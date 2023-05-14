@@ -95,7 +95,7 @@ std::string infx2pstfx(std::string inf) {
 }
 
 int eval(std::string pref) {
- Tstack<int, 100> stack1;
+  Tstack<int, 100> stack1;
   std::string num = "";
   for (size_t i = 0; i < pref.size(); i++) {
     if (getPrior(pref[i]) == -1) {
